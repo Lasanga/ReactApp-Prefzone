@@ -1,0 +1,3 @@
+rootProject.name = 'PrefzoneNativeApp'
+
+include ':app'
