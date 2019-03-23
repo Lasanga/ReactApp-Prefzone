@@ -7,11 +7,9 @@ class HomeScreen extends Component {
         const { navigation } = this.props;
         const userDetails = navigation.getParam('userDetails', 'NO-ID');
         return (
-
-            <AppStack />
-            // <View>
-            //     <Text> {userDetails.userId} </Text>
-            // </View>
+            <View>
+                <Text> {userDetails.userId} </Text>
+            </View>
         )
     }
 }

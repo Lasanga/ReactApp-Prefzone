@@ -48,7 +48,7 @@ class LoginScreen extends Component {
                         <Text style={styles.subTitle}>{this.state.welcomeMessage}</Text>
                         <Button
                             title="Rgister now"
-                            onPress={() => navigate('Home', { screen: "Register" })}
+                            onPress={() => navigate('Register', { screen: "Register" })}
                         />
                     </View>
                     <View style={styles.formContainer}>
