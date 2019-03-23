@@ -31,7 +31,7 @@ class RegisterForm extends Component {
       tenantId : defaultTenantVal
     }
 
-    let apiUrl = devBaseURL + '/api/services/app/Account/Register';
+    let apiUrl = baseUrl + '/api/services/app/Account/Register';
     axios.post(apiUrl, newRegForm)
       .then(res => {
         this.setState({ loading: false });
