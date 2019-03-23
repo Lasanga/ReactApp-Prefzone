@@ -22,7 +22,7 @@ class TransactionScreen extends Component {
     axios.defaults.headers.common['Authorization'] = 'Bearer ' + userDetails.accessToken;
 
     this.setState({ loading: true });
-    let apiUrl = devBaseURL + '/api/services/app/CustomerTransactions/GetCustomerTransaction?id=' + userDetails.userId + '';
+    let apiUrl = baseUrl + '/api/services/app/CustomerTransactions/GetCustomerTransaction?id=' + userDetails.userId + '';
 
     axios.get(apiUrl)
       .then(res => {

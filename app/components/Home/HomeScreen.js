@@ -23,7 +23,7 @@ class HomeScreen extends Component {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + userDetails.accessToken;
 
         this.setState({ loading: true });
-        let apiUrl = devBaseURL + '/api/services/app/Product/GetList';
+        let apiUrl = baseUrl + '/api/services/app/Product/GetList';
 
         axios.get(apiUrl)
             .then(res => {
@@ -38,7 +38,7 @@ class HomeScreen extends Component {
 
     getStocks = (id) => {
         this.setState({ loading: true });
-        let apiUrl = devBaseURL + '/api/services/app/Stock/GetAll?ProductId=' + id + '';
+        let apiUrl = baseUrl + '/api/services/app/Stock/GetAll?ProductId=' + id + '';
 
         axios.get(apiUrl)
             .then(res => {

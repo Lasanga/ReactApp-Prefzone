@@ -19,7 +19,7 @@ class OfferScreen extends Component {
     axios.defaults.headers.common['Authorization'] = 'Bearer ' + userDetails.accessToken;
 
     this.setState({ loading: true });
-    let apiUrl = devBaseURL + '/api/services/app/Product/GetDiscountProducts';
+    let apiUrl = baseUrl + '/api/services/app/Product/GetDiscountProducts';
 
     axios.get(apiUrl)
       .then(res => {
