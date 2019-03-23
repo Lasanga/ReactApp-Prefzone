@@ -1,7 +1,7 @@
 {
   "name": "PrefzoneNativeApp",
   "displayName": "PrefzoneNativeApp",
-  "devBaseURL": "https://a5cf0878.ngrok.io",
+  "devBaseURL": "https://032f57c0.ngrok.io",
   "baseUrl" : "https://prefzone-server-web.azurewebsites.net",
   "defaultTenantVal": 1
 }

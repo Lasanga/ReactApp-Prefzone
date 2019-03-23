@@ -28,12 +28,12 @@ class LoginForm extends Component {
             tenantId: 1
         }
 
-        let apiUrl = baseUrl + '/api/TokenAuth/Authenticate';
+        let apiUrl = devBaseURL + '/api/TokenAuth/Authenticate';
         axios.post(apiUrl, loginform)
             .then(res => {
                 this.setState({ loggedUser: res.data.result })
                 this.setState({ loading: false });
-                this.props.navigation.navigate('Home', { userDetails: this.state.loggedUser })
+                this.props.navigation.navigate('Drawer', { userDetails: this.state.loggedUser })
             }).catch(err => {
                 alert(err);
                 this.setState({ loading: false });
