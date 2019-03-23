@@ -28,7 +28,7 @@ class LoginForm extends Component {
             tenantId: 1
         }
 
-        let apiUrl = devBaseURL + '/api/TokenAuth/Authenticate';
+        let apiUrl = baseUrl + '/api/TokenAuth/Authenticate';
         axios.post(apiUrl, loginform)
             .then(res => {
                 this.setState({ loggedUser: res.data.result })
